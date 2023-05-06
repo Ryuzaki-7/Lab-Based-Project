@@ -1,0 +1,19 @@
+\vspace{1cm}
+\section{{{\fontsize{17}{21}\selectfont \textbf{Experimental Setup}}}}
+\setlength{\columnsep}{1.5cm}
+
+\begin{multicols}{2}
+\vspace{0.5cm}
+\subsection{{{\fontsize{14}{19}\selectfont \textbf{Evaluation Metrics}}}}
+Mean absolute error (MAE) is widely used in SOD tasks. We adopt the MAE (M) metric to assess the pixel-level accuracy between a predicted map and ground-truth. However, while useful for assessing the presence and amount of error, the MAE metric is not able to determine where the error occurs.\\
+Since concealed objects often contain complex shapes, COD also requires a metric that can judge structural similarity. We therefore utilize the S-measure (\(S_a\)) as our structural similarity evaluation metric. Finally, recent studies have
+suggested that the weighted F-measure can provide more reliable evaluation results than the traditional F-measure. Thus, we further consider this as an alternative metric for COD.
+\vspace{0.5cm}
+\subsection{{{\fontsize{14}{19}\selectfont \textbf{Training/Testing Protocols}}}}
+We evaluate the models on the whole CHAMELEON\cite{camo_dataset} dataset and the test sets of CAMO and COD10K. For multispectral data we use Drone Image Dataset and split it into training and test set.
+
+\end{multicols}
+
+\vspace{0.5cm}
+{\color{gray}\hrule}
+\vspace{0.5cm}

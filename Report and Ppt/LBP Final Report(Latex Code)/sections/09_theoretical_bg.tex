@@ -1,0 +1,15 @@
+\section{{{\fontsize{17}{21}\selectfont \textbf{Theoretical Background}}}}
+\setlength{\columnsep}{1.5cm}
+\begin{multicols}{2}
+
+Camouflage detection is a critical task in the military and security operations, as it can have significant implications on the safety of personnel and the success of operations. Camouflage is a technique used to blend objects into the surrounding environment, making them difficult to detect visually or through traditional imaging techniques.\\
+Deep learning models have shown significant promise in detecting camouflaged objects in different environments. One such model is SINet, which is based on a Fully Convolutional Neural Network (FCNN)\cite{ai.stackexchange.fullyconvnet} architecture. The model consists of an encoder network and a decoder network, which are connected through skip connections. These connections help preserve spatial information during the encoding process, improving the accuracy of the model.\\
+SINet takes a 3-input channel image as input, and outputs a binary mask image indicating the presence or absence of camouflaged objects. The network is trained using a binary cross-entropy loss function, which is optimized using the Adam optimizer.\cite{adam}\\
+In addition to RGB\cite{rgb} images, multispectral images\cite{edmundoptics} can also be used for camouflage detection. Multispectral imaging involves capturing and analyzing images at different wavelengths, which can reveal hidden information about the scene that is not visible in the RGB image. The use of multispectral imaging can enhance the performance of SINet in detecting camouflaged objects in different environments.\\
+However, SINet is designed to work with 3-input channel images only, which presents a challenge when using multispectral images. To address this challenge, we use Principal Component Analysis (PCA) to reduce the dimensionality of the multispectral image to 3 features, which can be input to the SINet model. PCA is a mathematical technique that transforms a set of correlated variables into a set of uncorrelated variables called principal components. This technique allows us to reduce the dimensionality of the multispectral image while retaining the most important information.\\
+Training a model for camouflage detection requires a large dataset of labeled images. In our project, we used drone data\cite{drones6100308} to simulate real-world scenarios and improve the performance of our model in detecting camouflaged objects in different environments. The drone data included images captured from different heights and angles, which allowed us to train a robust model that can detect camouflaged objects in various settings. The use of drone data also helped us overcome the limitations of traditional ground-based datasets, which may not capture the full range of environments and scenarios that are relevant for camouflage detection.
+\end{multicols}
+
+\vspace{0.5cm}
+{\color{gray}\hrule}
+\vspace{0.5cm}

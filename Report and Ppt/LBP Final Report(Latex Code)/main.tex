@@ -1,0 +1,105 @@
+\documentclass[a4paper,12pt]{article}
+% Package to make citations superscrit with brackets
+\usepackage[super,square]{natbib}
+% Package to change margin size
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage[T1]{fontenc}
+\usepackage{fontsize}
+\usepackage{lmodern}
+\usepackage{anysize}
+\usepackage{titlesec}
+\usepackage{anysize}
+\usepackage{tabularx}
+\usepackage{caption}
+\usepackage{blindtext}
+\usepackage{multicol}
+\titlespacing{\subsection}{0pt}{\parskip}{-\parskip}
+\marginsize{2cm}{2cm}{1cm}{2cm}
+% Package to make headers
+\usepackage{fancyhdr}
+\renewcommand{\headrulewidth}{0pt}
+% Package for highligths
+\usepackage{soul}
+% Colors for the references links
+\usepackage[dvipsnames]{xcolor}
+% Package to link references
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    citecolor=CadetBlue,
+    filecolor=CadetBlue,      
+    urlcolor=CadetBlue,
+}
+% Package for lorem ipsum
+\usepackage{lipsum}
+% Package for multicolumn
+\usepackage{multicol}
+\setlength\columnsep{18pt}
+% Sets bastract
+\renewenvironment{abstract}
+ {\par\noindent\textbf{\abstractname}\ \ignorespaces \\}
+ {\par\noindent\medskip}
+
+\begin{document}
+% Makes header
+\pagestyle{fancy}
+\thispagestyle{empty}
+\fancyhead[R]{\textit{CSE, IIT Roorkee}}
+\fancyhead[L]{}
+% Makes footnotes with an asterisk
+\renewcommand*{\thefootnote}{\fnsymbol{footnote}}
+\begin{center}
+{\fontsize{24pt}{28pt}\selectfont \textbf{Camouflage Object Detection using Multi-spectral Drone Data}}
+\vspace{1.5cm}
+{\Large
+\\ Suryansh Singh (20114096) \\
+\vspace{0.2cm}
+\ Shrayash Prasad (20114088) \\
+\vspace{0.2cm}
+\ Pranay Parashar (20114073) \\
+\vspace{0.5cm}
+\ \textbf{Under the guidance of} \\
+\vspace{0.2cm}
+\ Prof. Dharmendra Singh \\
+\vspace{1.5cm}
+}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.5\textwidth]{sections/LBP/iit-roorkee-logo.png}
+  \label{fig:image}
+\end{figure}
+\vspace{0.5cm}
+{\fontsize{12pt}{16pt}\selectfont \textbf{DEPARTMENT OF COMPUTER SCIENCE AND ENGINEERING \\ INDIAN INSTITUTE OF TECHNOLOGY ROORKEE \\ ROORKEE-247667 \\ April 2023}}
+\newpage
+\medskip
+\end{center}
+\vspace{0.4cm}
+\medskip
+\input{./sections/00_candidates_dec.tex}
+\input{./sections/01_certificate.tex}
+\input{./sections/02_acknowledgement.tex}
+\input{./sections/05_index.tex}
+\input{./sections/06_list_of_fig.tex}
+\input{./sections/07_list_of_tables.tex}
+\input{./sections/03_abstract.tex}
+\input{./sections/08_intro.tex}
+\input{./sections/09_theoretical_bg.tex}
+\input{./sections/15_problem_statement.tex}
+\input{./sections/10_objective.tex}
+\input{./sections/11_motivation.tex}
+\input{./sections/13_literature_review.tex}
+\input{./sections/14_research_gaps.tex}
+\input{./sections/16_methodology.tex}
+\input{./sections/18_flowcharts.tex}
+\input{./sections/19_specification_tables.tex}
+\input{./sections/20_experimental_setup.tex}
+\input{./sections/21_results.tex}
+\input{./sections/22_outcomes.tex}
+\input{./sections/23_conclusion.tex}
+\input{./sections/24_limitations.tex}
+\input{./sections/25_future_scope.tex}
+\bibliographystyle{plain}
+\bibliography{references}
+\end{document}
